@@ -42,7 +42,6 @@ For any questions or issues related to using Hardhat or interacting with the Eth
 ## Authors
 
 - [Omemgboji Emmanuel](mailto:emmanuelomemgboji@gmail.com)
-- [SignorDev](https://twitter.com/onesignor)
 
 ## License
 
