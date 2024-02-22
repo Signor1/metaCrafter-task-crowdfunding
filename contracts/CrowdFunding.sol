@@ -11,4 +11,9 @@ contract Crowdfunding {
     bool public campaignEnded;
 
     address[] public contributors;
+
+    constructor(uint _durationInDays) {
+        organizer = msg.sender;
+        deadline = block.timestamp + (_durationInDays * 1 days);
+    }
 }
