@@ -42,10 +42,9 @@ contract Crowdfunding {
             "Only the organizer can finalize the campaign"
         );
         //checking if the funding has ended
-        require(
-            block.timestamp >= deadline,
-            "The campaign deadline has not been reached yet"
-        );
+        if (block.timestamp < deadline) {
+            revert("The campaign deadline has not reached");
+        }
         //checking if the whole campaign for fund raising has ended
         require(!campaignEnded, "The campaign has already been finalized");
 
